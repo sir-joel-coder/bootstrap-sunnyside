@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+#contact {
+    padding: .8rem 1.5rem;
+    color: black;
+}
+#contact:hover {
+    background-color: yellow !important;
+
+}
+.navbar-nav {
+    gap: 2rem;
+}
+.navbar-brand img {
+    width: 10rem;
+}
+.nav-link {
+    width: fit-content;
+    color: white;
+    padding: .8rem 1.5rem;
+    font-weight: 600;
+}
+.top-section {
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:clamp(38rem, 100vh, 40rem);
+    position: relative;
+}
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    gap: 6rem;
+    padding-top: 2rem;
+}
+.hero-container > h1 {
+    letter-spacing: 1rem;
+    color: white;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+}
+.branding-section,.secondary-section {
+    margin: 0;
+}
+.branding-section-child,.secondary-section-child {
+    box-sizing: border-box;
+    padding: 0;
+    height: clamp(30rem,80vh,35rem);
+}
+.img {
+    width: 100%;
+    height: 100%;
+}
+.branding-section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 7rem;
+}
+.header {
+    font-size: clamp(1.5rem,5vw,2rem);
+    font-family: 'fraunces', serif;
+}
+.footer {
+    border-bottom: 5px solid rgba(255, 0, 0,0.5);
+    width: fit-content;
+    border-radius: 5px;
+    line-height: .8rem;
+    font-family: 'Fraunces', serif;
+}
+.footer.yellow {
+    border-bottom-color: rgba(255, 255, 0,0.5);
+}
+.secondary-section-child {
+    display: flex;
+    /* margin: 0; */
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 2rem 7rem;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.secondary-section-child > h2 {
+    font-family: 'Fraunces', serif;
+}
+.photography {
+    background: url(../images/desktop/image-photography.jpg);
+    background-size: 100% 100%;
+}
+.graphic-design {
+    background: url(../images/desktop/image-graphic-design.jpg);
+    background-size: 100% 100%;
+}
+.client-testimonials-child {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.client-testimonials-child > p {
+    margin: 0;
+    padding: 0%;
+}
+.client-testimonials-child > img {
+    border-radius: 50%;
+    width: 6rem;
+}
+
+.testimonial-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+.testimonial-header {
+    margin-bottom: 5rem;
+    font-weight: 600;
+}
+.image-section {
+    margin: 0;
+}
+.image-section > img {
+    padding: 0;
+    height: clamp(18rem,50vh,23rem);
+}
+
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    row-gap: 2rem;
+    background-color: #9ADACEff;
+    color: rgb(36, 78, 36);
+}
+
+.page-footer-links-container {
+    display: flex;
+    column-gap: 2rem;
+}
+.page-footer-links-container > a {
+    text-decoration: none;
+    color: rgb(22, 65, 22);
+    font-weight: 600;
+}
+.page-footer-links-container > a:hover {
+    color: black;
+}
+.page-footer-icon-container {
+    display: flex;
+    gap:2rem;
+}
+.page-footer > h2 {
+    font-weight: 900;
+}
+footer h4 {
+    font-family: 'Fraunces', serif;
+
+}
+@media screen and (max-width:766px) {
+    .navbar-nav {
+        background-color: white;
+        margin-top: 2rem;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .nav-link {
+        color: black;
+    }
+    .branding-section-text {
+        text-align: center;
+        align-items: center;
+        row-gap: 2rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .branding-section-text,.secondary-section-child {
+        padding: 3rem;
+    }
+    .secondary-section-child {
+        padding-bottom: 1rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .top-section {
+        background-image: url(../images/mobile/image-header.jpg);
+        height: clamp(30rem,80vh,35rem);
+    }
+    .hero-container {
+        row-gap: 4.7rem;
+    }
+}
+
+
